@@ -1,25 +1,24 @@
 {
-  "compileOnSave": false,
   "compilerOptions": {
-    "allowSyntheticDefaultImports": true,
-    "declaration": true,
-    "declarationDir": "esm",
-    "esModuleInterop": true,
-    "importHelpers": true,
-    "jsx": "react",
-    "lib": ["es2015", "esnext.asynciterable", "dom"],
-    "module": "esnext",
-    "target": "es5",
-    "outDir": "esm",
+    "target": "es2016",
+    "sourceMap": true,
+    "allowJs": true,
     "skipLibCheck": true,
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": false,
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "strict": true,
+    "jsx": "react-jsx",
     "forceConsistentCasingInFileNames": true,
-    "allowJs": false
+    "esModuleInterop": true,
+    "module": "ESNext",
+    "moduleResolution": "node10",
+    "declaration": true,
+    "outDir": "./dist/",
+    "paths": {
+    }
   },
-  "includes": ["src"],
+  "include": [
+    "src"
+  ],
   "exclude": [
     "node_modules",
     "dist",

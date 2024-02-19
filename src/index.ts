@@ -87,7 +87,7 @@ const defaultConfig: Config = {
 
 export interface GrantedTouch {
   id: string | number;
-  onTerminationRequest: (e?: ResponderEvent) => void;
+  onTerminationRequest: (e?: ResponderEvent) => boolean;
   onTerminate: (e?: ResponderEvent) => void;
 }
 
